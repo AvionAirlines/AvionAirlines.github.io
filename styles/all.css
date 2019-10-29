@@ -2,9 +2,19 @@ body{
   background-color: white;
   font-style: sans-serif;
 }
-.navbar{
-  width:100%;
+nav{
+  margin: 0;
+  padding:0;
+  display: flex;
+  flex-direction: row;
+}
+.navelement{
+  padding: 2%;
+  color: white;
   background-color: #141515;
-  height: 5%;
-  border: none;
+  text-decoration:none;
+}
+.navelement: hover{
+  background-color: #020303;
+  color: white;
 }
