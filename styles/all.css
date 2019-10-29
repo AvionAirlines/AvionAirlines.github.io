@@ -21,6 +21,7 @@ nav{
 }
 .navelement:hover{
   margin: 0;
+  white-space: wrap;
   background-color: #030303;
   color: white;
 }
