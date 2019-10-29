@@ -9,7 +9,7 @@ nav{
   flex-direction: row;
 }
 .navelement{
-  padding: 2%;
+  padding: 1%;
   color: white;
   background-color: #141515;
   text-decoration:none;
