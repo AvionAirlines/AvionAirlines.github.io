@@ -25,5 +25,5 @@ nav{
   color: white;
 }
 .right{
-  hover: right;
+  float: right;
 }
