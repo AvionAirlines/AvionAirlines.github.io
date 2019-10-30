@@ -12,8 +12,9 @@
 .bookaflight{
   text-decoration:none;
   color:white;
+  width: 20%;
   background-color: blue;
-  padding: 2%;
+  padding: 1%;
 }
 .titleWrapper{
   display: flex;
