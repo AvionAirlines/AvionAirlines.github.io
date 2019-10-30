@@ -1,4 +1,17 @@
 .headermain{
   margin: 0;
   height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.titleWrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.linkWrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
