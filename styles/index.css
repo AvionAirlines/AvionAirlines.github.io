@@ -5,6 +5,16 @@
   flex-direction: column;
   justify-content: space-around;
 }
+.title{
+  color: white;
+  font-size: 500%;
+}
+.bookaflight{
+  text-decoration:none;
+  color:white;
+  background-color: blue;
+  padding: 2%;
+}
 .titleWrapper{
   display: flex;
   flex-direction: row;
