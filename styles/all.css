@@ -10,6 +10,7 @@ nav{
   display: flex;
   width: 100%;
   flex-direction: row;
+  flex-line: 1;
   background-color: #242E2E;
 }
 .navelement{
