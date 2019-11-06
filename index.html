@@ -2,12 +2,12 @@
 <html>
   <head>
     <link rel="preload" as="image" href="-/images/airplanebackgroundimage.jpg">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="styles/all.css">
     <link rel="stylesheet" type="text/css" href="styles/index.css">
   </head>
   <body>
-    <div class="bg">
-    <header>
+   
       <nav>
       <a class="navelement" href="home.html">Home</a>
       <a class="navelement" href="bookflight.html">Book a Flight</a>
@@ -17,6 +17,9 @@
       <a class="navelement right" href="notifications.html">Notification Image</a>
       <a class="navelement right" href="help.html">Help</a>
     </nav>
+
+    <header class="main">
+       <div class="bg">
         <section class="headermain">
           <section class="titleWrapper">
           <h1 class="title">Avion Airlines</h1>
@@ -25,14 +28,25 @@
           <a class="bookaflight" href="bookalflight.html">Book a Flight</a>
           </section>
         </section>
-  
-    </header>
     <article>
       <h1></h1>
     </article>
     <footer>
     </footer>
+    </header>
     </div>
    </body>
+     <script>
+//jquery section
+var height = $(window).height() - 30;
+
+$(".main").height(height);
+
+window.onresize = function(event) {
+var height = $(window).height() - 30;
+
+$(".main").height(height);
+};
+	</script>
 </html>
  
