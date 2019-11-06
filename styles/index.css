@@ -36,13 +36,20 @@ body, html {
 
 .bg {
   /* The image used */
-  background-image: url("/images/airplanebackgroundimage.jpg");
-
+  background-image: url("https://avionairlines.github.io/images/airplanebackgroundimage.jpg");
+ z-index: 5;
   /* Full height */
-  height: 96%; 
+  height: 94%; 
 
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+body {
+overflow:hidden;
+}
+.main {
+  margin-top: 0px;
+  overflow-y: scroll;
 }
