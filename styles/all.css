@@ -12,6 +12,7 @@ nav{
   flex-direction: row;
   flex-line: 1;
   background-color: #242E2E;
+   white-space: nowrap;
 }
 .navelement{
   padding: 1%;
