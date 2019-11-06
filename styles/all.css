@@ -29,6 +29,17 @@ nav{
   background-color: #030303;
   color: white;
 }
+.navelement1{
+  padding: 1%;
+  margin: 0;
+  color: white;
+  background-color: #242E2E;
+  text-decoration:none;
+}
+.navelement1:hover{
+  margin: 0;
+  color: white;
+}
 .right{
   float: right;
 }
