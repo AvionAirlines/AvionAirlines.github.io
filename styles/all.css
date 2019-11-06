@@ -14,6 +14,9 @@ nav{
   background-color: #242E2E;
    white-space: nowrap;
 }
+.notificationicon{
+  width: 10%;
+}
 .navelement{
   padding: 1%;
   margin: 0;
