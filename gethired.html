@@ -1,8 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="styles/all.css">
-  </head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="styles/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
+<style>
+  * {
+  box-sizing: border-box;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  padding-top: 75px;
+  background: #ccc;
+  text-align: center;
+  color: #FFF;
+  font-size: 3em;
+}
+</style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
   <body translate="no" data-aos-easing="ease" data-aos-duration="1200" data-aos-delay="0">
 
 <div class="item aos-init aos-animate" data-aos="fade-right">3</div>
