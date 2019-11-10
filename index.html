@@ -1,46 +1,495 @@
 <!DOCTYPE html>
 <html>
+
+	<title> Avion Airlines </title>
   <head>
-    <link rel="preload" as="image" href="-/images/airplanebackgroundimage.jpg">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'>
+	  <link rel="shortcut icon" type="image/png" href="https://www.trzcacak.rs/myfile/detail/533-5337119_black-airplane-png-exploration-symbols.png"/>
+<link rel="shortcut icon" type="image/png" href="https://www.trzcacak.rs/myfile/detail/533-5337119_black-airplane-png-exploration-symbols.png"/>
+	  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	 
+	  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="styles/all.css">
     <link rel="stylesheet" type="text/css" href="styles/index.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<style>
+
+	  * {
+  box-sizing: border-box;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  padding-top: 75px;
+  background: #ccc;
+  text-align: center;
+  color: blue;
+  font-size: 3em;
+  z-index: 20;
+  display: block;
+}
+
+	.example {
+  padding: 20px;
+  color: white;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.logo {display: block;}
+  .example {background: red;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.logo {display: block;}
+  .example {background: green;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) --my phone rn lol - royce */
+@media only screen and (min-width: 768px) {
+	.logo {display: none;}
+  .example {background: blue;}
+ 
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {background: orange;}
+  .logo {display: block;}
+} 
+
+/* Extra large devices(large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {background: pink;}
+  .logo {display: block;}
+}
+
+
+nav{
+  margin:0;
+  padding:0;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  background-color: #242E2E;
+   white-space: nowrap;
+   height: 10%;
+   font-size: 130%;
+}
+.navelement{
+  padding: 1%;
+  margin: 0;
+  color: white;
+  background-color: #242E2E;
+  text-decoration:none;
+}
+.navelementa{
+  padding: 1%;
+  margin: 0;
+  color: white;
+  background-color: #242E2E;
+  text-decoration:none;
+}
+.navelement:hover{
+  margin: 0;
+  background-color: #030303;
+  color: white;
+}
+.navelement1{
+  padding: 1%;
+  margin: 0;
+  color: white;
+  background-color: #242E2E;
+  text-decoration:none;
+}
+.navelement1:hover{
+  margin: 0;
+  color: white;
+}
+.right{
+  float: right;
+}
+.headermain{
+  margin: 0;
+  height: 130%; //500px
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.title{
+ color: white;
+  text-shadow: 1px 1px grey;
+  font-size: 500%;
+}
+
+.titleWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.linkWrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("https://avionairlines.github.io/images/airplanebackgroundimage.jpg");
+ z-index: 5;
+  /* Full height */
+  height: 88%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body {
+overflow:hidden;
+
+
+  background-image: url("https://avionairlines.github.io/images/BackgroundInterface.png");
+  background-repeat: repeat;
+}
+.main {
+  margin-top: 0px;
+  overflow-y: scroll;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 35%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 45%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 8px;
+  border: 1px solid #242E2E;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  background-color: white;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
+
+input[type="text"] {
+   
+    padding: 8px;
+}
+
+input[type="submit"] {
+	 margin-top: 2%;
+    margin-left: -16%;
+    height: 30px;
+    width: 15%;
+    background: white;
+    color: lightgrey;
+    border: 0;
+    -webkit-appearance: none;
+	border-radius: 10px;
+}
+.flexContainer {
+    display: flex;
+}
+
+.inputField {
+    flex: 1;
+}
+
+
+.bottom {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background: orange;
+  z-index: 1;
+}
+#div {
+	//display: none;
+	//position: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+
+
+
+section h1 {
+  position: static;
+  top: 50%;
+  left: 90%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font : normal 300 64px/1 'Josefin Sans', sans-serif;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.demo a {
+  position: absolute;
+  bottom: 16%;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+.demo a:hover {
+  opacity: .5;
+}
+
+
+
+
+#section03 a {
+padding-top: 60px;
+}
+#section03 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+#section03 a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+#section03 a span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+  width: 44px;
+  height: 44px;
+  box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+  border-radius: 100%;
+  opacity: 0;
+  -webkit-animation: sdb03 3s infinite;
+  animation: sdb03 3s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+</style>
+
+
+
+
   </head>
   <body>
-   
+	  
+    <div id="rip" style="background-color: lightgrey; position: fixed; top:8%; right:0; color: black; z-index: 30; display: none;">Founding <br> Promos/Coupons <br> Forum <br> Chat <br> Device Compatibility </div>
       <nav>
-      <a class="navelement" href="home.html">Home</a>
-      <a class="navelement" href="bookflight.html">Book a Flight</a>
-      <a class="navelement" href="gethired.html">Get Hired</a>
-      <a class="navelement" href="flight-info.html">Flight Information</a>
-      <a class="navelement1 right" href="#login" style="position: fixed; right: 70px;"><button style='font-size:24px; background-color: #242E2E; border: none; color: white'><i class=' fas fa-sign-in-alt'></i></button></a>
+      <a class="navelementa" id="slower"><img src="image (1).png" class="logo" style="height: 140%; width: 20%;" ></img></a>
+      <a class="navelement" href="bookflight.html" style="position: fixed; left: 150px;">Book a Flight</a>
+     
+		  <a class="navelement" href="gethired.html" style="position: fixed; left: 300px;"> Get Hired</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<div class="row">
+  <div  class="left"  style="background-color:#242E2E; z-index: 10;">
+	  <div class="flexContainer">
+    <input type="text" id="mySearch" class="inputField" onclick="royce()" onkeyup="myFunction()" placeholder="Search Destination..." title="Type in a category" style="border-radius: 10px;"><input onclick="yeet()" type="submit" id="close1" value="X" style="border-radius: 4px; display: none;"></input>
+	</div>
+    <ul id="myMenu">
+      <li><a href="India.html">India</a></li>
+      <li><a href="China.html">China</a></li>
+      <li><a href="US.html">US</a></li>
+      <li><a href="South_America.html">South America</a></li>
+      <li><a href="Indonesia.html">Indonesia</a></li>
+      <li><a href="Israel.html">Israel</a></li>
+      <li><a href="Afghanistan.html">Afghanistan</a></li>
+      <li><a href="Pakistan.html">Pakistan</a></li>
+      <li><a href="Jerusalem.html">Jerusalem</a></li>
+    </ul>
+  </div>
+
+<a class="navelement1 right" href="#login" style="position: fixed; right: 75px;"><button style='font-size:24px; background-color: #242E2E; border: none; color: white'><i class=' fas fa-sign-in-alt'></i></button></a>
 
    <a class="navelement1 right" href="#notifications" style="position: fixed; right: 30px;"><button style='font-size:24px; background-color: #242E2E; border: none; color: white'><i class=' fas fa-bell'></i></button></a>
-      <a class="navelement1 right" href="#help" style="position: fixed; right: 0;"><button style='font-size:24px; background-color: #242E2E; border: none; color: white'><i class='fa fa-ellipsis-v'></i></button></a>
-    </nav>
 
-    <header class="main">
-       <div class="bg">
-        <section class="headermain">
+      <a class="navelement1 right" onclick="rip()" style="position: fixed; right: 0;">
+		  
+		  <button onclick="rip()" style='font-size:24px; background-color: #242E2E; border: none; color: white'><i class='fa fa-ellipsis-v'></i></button></a>
+    </nav>
+      <header class="main">
+		  <div class="bg">
+			  <div class="bg2">
+        <section class="headermain ">
           <section class="titleWrapper">
-          <h1 class="title">Avion Airlines</h1>
+        <h1 class="title"><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avion Airlines</h1>
             </section>
           <section class="linkWrapper">
-          <a class="bookaflight" href="bookalflight.html">Book a Flight</a>
+	     <section id="section03"class="demo ">
+  
+  <a style="position: static;" id="royce123"><span></span></a>
+</section>
           </section>
         </section>
-    <article>
-      <h1>Information to be put here...but for now a bunch of <br>'s for testing purposes</h1>
-	    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+     
+    
+
+    <article id="smaller_background ">
+		 <center><div id="section123"> <br><br><br><br><br><br><br><h1 > Welcome to Avion Airlines! </h1> </div>	<div id="div"></div><div class="item" data-aos="fade-right">Avion Airlines is a globalized company!</div>
+<div class="item" data-aos="fade-right">3</div><div class="item" data-aos="fade-right">3</div><div class="item" data-aos="fade-right">3</div><div class="item" data-aos="fade-right">3</div><div class="item" data-aos="fade-right">3</div><div class="item" data-aos="fade-right">3</div><div class="item" data-aos="fade-right">3</div><div class="item" data-aos="fade-right">3</div><div class="item" data-aos="fade-right">3</div><div class="item" data-aos="fade-right">3</div><div class="item" data-aos="fade-right">3</div></center>
+<br>	<p class="example123"></p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
     </article>
-    <footer>
-    </footer>
-    </header>
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<iframe src="https://Heroes--roycea.repl.co/footer.html" width="100%" height="320px" frameBorder="0" scrolling="no"></iframe>
+	</header>
+	 </div>
+	 </div>
    </body>
-     <script>
-//jquery section
+
+<script>
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+ alert("Yikes");
+  }
+}
+</script>
+
+
+   <script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+   <script>
+//get window height minus 50 pixels for the headers height
 var height = $(window).height() - 30;
 
 $(".main").height(height);
@@ -51,5 +500,88 @@ var height = $(window).height() - 30;
 $(".main").height(height);
 };
 	</script>
+
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+<script>
+function royce() {
+
+document.getElementById("myMenu").style.display = "block";
+document.getElementById("close1").style.display = "block";
+}
+</script>
+<script>
+	$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 40) {
+    $('div').fadeIn();
+  } else {
+    $('div').fadeOut();
+  }
+});
+</script>
+<!--place at bottom of page for faster page load -->
+<head>
+ <link rel="preload" as="image" href="https://avionairlines.github.io/images/airplanebackgroundimage.jpg">
+ </head>
+
+
+<script>
+	function royce4() {
+		//document.getElementById("royce123").style.display = "none";
+		scrollWin(0, 50);
+		alert("Wow");
+	}
+</script>
+
+<script>
+	function yeet() {
+		document.getElementById("myMenu").style.display = "none";
+		document.getElementById("close1").style.display = "none";
+		
+	}
+	</script>
+	<script>
+
+</script>
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+<script src='https://unpkg.com/aos@2.3.0/dist/aos.js'></script>
+<script id="rendered-js">
+      AOS.init({
+  duration: 1200 });
+      //# sourceURL=pen.js
+    </script>
+<script src="https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js"></script>
+
+<script>
+	window.addEventListener('scroll', function() {
+  alert("Wow");
+});
+</script>
+<script>
+	function rip() {
+           	document.getElementById("rip").style.display = "block";
+	}
+	document.addEventListener("click", function(){
+  document.getElementById("rip").style.display = "none";
+});
+</script>
 </html>
+
+
  
