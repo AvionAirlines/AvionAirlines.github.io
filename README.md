@@ -9,3 +9,8 @@ This project was started on November 6th, 2019. Expected completion date for thi
 
 Avion Airlines is held to be a fictional company for the FBLA Website Design Event.
 
+
+Schedule:
+
+November 18th: Device Compatibility -- Our goal: <br>
+<iframe src="http://www.scrolleffects.com/edge-animation.html"></iframe>
