@@ -13,4 +13,4 @@ Avion Airlines is held to be a fictional company for the FBLA Website Design Eve
 Schedule:
 
 November 18th: Device Compatibility -- Our goal: <br>
-<iframe src="http://www.scrolleffects.com/edge-animation.html"></iframe>
+https://avionairlines.github.io/devicebreakdown.html
